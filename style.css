@@ -33,6 +33,11 @@ body {
   gap: 16px;
 }
 
+.brand {
+  height: inherit;
+  width: auto;
+}
+
 .top-body {
   display: flex;
   gap: 20px;
