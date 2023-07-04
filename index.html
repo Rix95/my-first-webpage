@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <audio id="myAudio">
+        <source src="images/Berserk_OST_-_Guts_Theme-639887.mp3" type="audio/ogg">
+        <source src="images/Berserk_OST_-_Guts_Theme-639887.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        } 
+    </script>
+
+
+
+
+
+    <div class="header">
+        <!-- <img src="images/logo.png" alt="logo" class="logo" /> -->
+        Header Logo
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="top-body">
+        <div class="left-container">
+            Kentaro Miura
+
+            <p class="description">
+                July 11, 1966 – May 6, 2021
+            </p>
+            <button onclick="playAudio()" type="button">Play Audio</button>
+            <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+
+            <!-- <button>Signup</button> -->
+        </div>
+        <img class="kentaro" src="images/Kentaro_Miura.png" alt="hero" class="hero" />
+    </div>
+    <div class="body-container">
+        <div class="center-body">
+            Characters
+            <div class="photo-container">
+                <div class="photo-text">
+                    <img src="images/guts.jpeg" alt="hero" class="hero" />
+                    <div class="text-photo">Guts</div>
+                </div>
+                <div class="photo-text">
+                    <img src="images/griffith.jpeg" alt="hero" class="hero" />
+                    <div class="text-photo">Griffith</div>
+                </div>
+                <div class="photo-text">
+                    <img src="images/casca.jpeg" alt="hero" class="hero" />
+                    <div class="text-photo">Casca</div>
+                </div>
+                <div class="photo-text">
+                    <img src="images/skull-knight.jpeg" alt="hero" class="hero" />
+                    <div class="text-photo">Skull Knight</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-body">
+            <div class="quote-container">
+                <div class="quote">
+                    "In this world, is the destiny of mankind controlled by some
+                    transcendental entity or law? Is it like the hand of God hovering
+                    above? At least it is true that man has no control, even over his
+                    own will. Man takes up the sword in order to shield the small wound
+                    in his heart sustained in a far-off time beyond remembrance. Man
+                    wields the sword so that he may die smiling in some far-off time
+                    beyond perception.”
+                </div>
+                <div class="author">-Kentaro Miura, Berserk, Vol. 1</div>
+            </div>
+        </div>
+
+        <div class="signup">
+            <div class="bar-container">
+                <div class="signup-text">
+                    Griffith Calls for you...
+                    <div class="lower-text">
+                        Interested in joining the band of the hawk?
+                    </div>
+                </div>
+                <a href="https://skullknight.net" class="sign-button">Join us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Copyright © Rix 2023</div>
+</body>
+
+</html>
